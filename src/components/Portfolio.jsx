@@ -1,4 +1,6 @@
 import React from 'react'
+import { BsFillArrowDownCircleFill } from 'react-icons/bs';
+import { Link } from 'react-scroll';
 
 const Portfolio = () => {
 
@@ -39,7 +41,8 @@ const Portfolio = () => {
             </div>
           ))}
           </div>
-        </div>    
+        </div> 
+     
     </div>
   )
 }
