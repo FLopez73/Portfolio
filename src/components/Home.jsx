@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BsFillArrowDownCircleFill } from 'react-icons/bs';
 import { Link } from 'react-scroll';
-import Hero from '../assets/hero.png';
+import Hero from '../assets/hero.png'
 
 const Home = () => {
   const [currentSection, setCurrentSection] = useState('home');
+ 
+
+ 
 
   const handleClick = () => {
     if (currentSection === 'home') setCurrentSection('about');
@@ -20,7 +23,7 @@ const Home = () => {
         <div className="flex flex-col justify-center flex-grow">
           <h2 className="text-3xl sm:text-7xl font-bold">
             Hi, I am <span className="text-cyan-500">Felix</span>, a Full Stack Web Developer
-            <span className="cursor-animation"></span>
+            
           </h2>
         </div>
         <div>

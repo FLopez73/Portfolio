@@ -1,7 +1,7 @@
 import React from 'react'
-import { BsFillArrowDownCircleFill } from 'react-icons/bs';
-import { Link } from 'react-scroll';
 import concertgo from '../assets/concertgo.png'
+import felinefinder from '../assets/felinefinder.png'
+import apartmentapp from '../assets/apartmentapp.png'
 
 const Portfolio = () => {
 
@@ -12,11 +12,11 @@ const Portfolio = () => {
         },
         {
             id: 2, 
-            src: ''
+            src: apartmentapp
         },
         {
             id: 3, 
-            src: ''
+            src: felinefinder
         },
     ]
 
