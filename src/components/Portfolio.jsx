@@ -1,13 +1,14 @@
 import React from 'react'
 import { BsFillArrowDownCircleFill } from 'react-icons/bs';
 import { Link } from 'react-scroll';
+import concertgo from '../assets/concertgo.png'
 
 const Portfolio = () => {
 
     const portfolios = [
         {
             id: 1, 
-            src: ''
+            src: concertgo
         },
         {
             id: 2, 
@@ -33,7 +34,7 @@ const Portfolio = () => {
 
           {portfolios.map(({id, src}) => ( 
             <div key={id} className='shadow-md shadow-grey-600 rounded-lg'>
-              <img src="" alt="" className='rounded-md duration-200 hover:scale-105'/>
+              <img src={src} alt="" className='rounded-md duration-200 hover:scale-105'/>
                 <div className='flex items-center'>
                     <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Demo</button>
                     <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Code</button>

@@ -15,17 +15,26 @@
     } 
 }
 
-@keyframes typewriter {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
+.cursor-animation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #000;
+  animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
   }
-  
-  .typewriter {
-    overflow: hidden; /* Ensures the text doesn't wrap */
-    animation: typewriter 2s steps(30) 1s 1 normal both;
+  50% {
+    opacity: 1;
   }
+  100% {
+    opacity: 0;
+  }
+}
+
   

@@ -20,6 +20,7 @@ const Home = () => {
         <div className="flex flex-col justify-center flex-grow">
           <h2 className="text-3xl sm:text-7xl font-bold">
             Hi, I am <span className="text-cyan-500">Felix</span>, a Full Stack Web Developer
+            <span className="cursor-animation"></span>
           </h2>
         </div>
         <div>
@@ -28,9 +29,9 @@ const Home = () => {
       </div>
       <div className="flex justify-center fixed bottom-0 mb-8 w-full">
         <Link to={currentSection} smooth duration={500} offset={-50} className="group" onClick={handleClick} >
-          <span className="group-hover:rotate-5 duration-300">
+         
             <BsFillArrowDownCircleFill size={30} />
-          </span>
+         
         </Link>
       </div>
     </div>
