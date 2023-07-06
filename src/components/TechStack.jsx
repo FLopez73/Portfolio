@@ -5,7 +5,9 @@ import javascript from '../assets/javascript.png'
 import reactImage from '../assets/react.png'
 import github from '../assets/github.png'
 import tailwind from '../assets/tailwind.png'
-
+import ruby from '../assets/ruby.png'
+import rails from '../assets/rails.png'
+import postgresql from '../assets/postgresql.png'
 
 const TechStack = () => {
 
@@ -33,20 +35,41 @@ const TechStack = () => {
       },
       {
         id: 4,
-        src: reactImage,
-        title: 'React',
-        style: 'shadow-blue-600'
+        src: ruby,
+        title: 'Ruby',
+        style: 'shadow-red-500'
 
       },
       {
         id: 5,
-        src: tailwind,
-        title: 'Tailwind',
-        style: 'shadow-sky-400'
+        src: rails,
+        title: 'Ruby On Rails',
+        style: 'shadow-red-500'
 
       },
       {
         id: 6,
+        src: reactImage,
+        title: 'React',
+        style: 'shadow-sky-300'
+
+      },
+      {
+        id: 7,
+        src: postgresql,
+        title: 'PostgreSQL',
+        style: 'shadow-blue-600'
+
+      },
+      {
+        id: 8,
+        src: tailwind,
+        title: 'Tailwind',
+        style: 'shadow-sky-600'
+
+      },
+      {
+        id: 9,
         src: github,
         title: 'GitHub',
         style: 'shadow-gray-400'
