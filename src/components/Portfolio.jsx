@@ -8,15 +8,21 @@ const Portfolio = () => {
     const portfolios = [
         {
             id: 1, 
-            src: concertgo
+            src: concertgo,
+            demoLink: 'https://concertgo.onrender.com/',
+            codeLink: 'https://github.com/Wham-Devs/concert-go-frontend/tree/main/concert-go-frontend',
         },
         {
             id: 2, 
-            src: apartmentapp
+            src: felinefinder,
+            demoLink: '',
+            codeLink: 'https://github.com/FLopez73/cat-tinder-frontend'
         },
         {
             id: 3, 
-            src: felinefinder
+            src: apartmentapp,
+            demoLink: '',
+            codeLink: 'https://github.com/FLopez73/apartment-app-frontend-lux-r-us'
         },
     ]
 
@@ -32,12 +38,16 @@ const Portfolio = () => {
 
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
 
-          {portfolios.map(({id, src}) => ( 
+          {portfolios.map(({id, src, demoLink, codeLink}) => ( 
             <div key={id} className='shadow-md shadow-grey-600 rounded-lg'>
               <img src={src} alt="" className='rounded-md duration-200 hover:scale-105'/>
                 <div className='flex items-center'>
-                    <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Demo</button>
-                    <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Code</button>
+                <a href={demoLink} target="_blank" rel="noopener noreferrer" className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  Demo
+                </a>
+                <a href={codeLink} target="_blank" rel="noopener noreferrer" className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  Code
+                </a>
                 </div>
             </div>
           ))}
