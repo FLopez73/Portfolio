@@ -39,7 +39,7 @@ const SocialLinks = () => {
                 <>Resume <BsFillPersonLinesFill size={30}/>
                 </>
             ),
-            href: 'src/assets/Felix Lopez Full Stack Software Dev.pdf',
+            href: '/Felix Lopez Full Stack Software Dev.pdf',
             style: 'rounded-br-md',
             download: true, 
         },
