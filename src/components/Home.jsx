@@ -35,14 +35,14 @@ const Home = () => {
 
  return (
    <>
-    <video autoPlay loop muted className="absolute z-0 w-full h-full object-cover">
+    <video autoPlay loop muted className="absolute z-1 w-full h-full object-cover">
       <source src={Wave} type="video/mp4" />
       Your browser does not support the video tag.
     </video>
     <div name="home" className="relative flex flex-col justify-center h-screen w-full">
       <div className="max-w-screen-lg mx-auto flex flex-col items-center px-4 md:flex-row">
         <div className="flex flex-col justify-center flex-grow">
-          <h2 className="text-3xl sm:text-7xl font-bold">
+          <h2 className="text-3xl sm:text-7xl font-bold text-white">
             Hi, I am <span className='text-cyan-500'>Felix</span>, a Full Stack Web Developer.
           </h2>
           <h3>Based in San Diego,CA</h3>
