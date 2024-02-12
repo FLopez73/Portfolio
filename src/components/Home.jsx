@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BsFillArrowDownCircleFill } from 'react-icons/bs';
 import { Link } from 'react-scroll';
 import Hero from '../assets/hero.png'
-import Wave from 'src/assets/wave.mp4'
+import Wave from '../assets/wave.mp4'
 const Home = () => {
   const [currentSection, setCurrentSection] = useState('home');
  
