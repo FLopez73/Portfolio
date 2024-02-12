@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BsFillArrowDownCircleFill } from 'react-icons/bs';
 import { Link } from 'react-scroll';
 import Hero from '../assets/hero.png'
-
+import Wave from 'src/assets/wave.mp4'
 const Home = () => {
   const [currentSection, setCurrentSection] = useState('home');
  
@@ -10,15 +10,35 @@ const Home = () => {
  
 
   const handleClick = () => {
-    if (currentSection === 'home') setCurrentSection('about');
-    else if (currentSection === 'about') setCurrentSection('portfolio');
-    else if (currentSection === 'portfolio') setCurrentSection('tech stack');
-    else if (currentSection === 'tech stack') setCurrentSection('contact');
-    else if (currentSection === 'contact') setCurrentSection('home');
+    switch (currentSection) {
+      case 'home':
+        setCurrentSection('about');
+        break;
+      case 'about':
+        setCurrentSection('portfolio');
+        break;
+      case 'portfolio':
+        setCurrentSection('tech stack');
+        break;
+      case 'tech stack':
+        setCurrentSection('contact');
+        break;
+      case 'contact':
+        setCurrentSection('home');
+        break;
+      default:
+        setCurrentSection('home'); 
+        break;
+    }
   };
 
-  return (
-    <div name="home" className="h-screen w-full flex flex-col justify-center bg-#66a3b3">
+ return (
+   <>
+    <video autoPlay loop muted className="absolute z-10 w-auto min-w-full min-h-full max-w-none">
+      <source src={Wave} type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div name="home" className="relative flex flex-col justify-center h-screen w-full bg-#66a3b3">
       <div className="max-w-screen-lg mx-auto flex flex-col items-center px-4 md:flex-row">
         <div className="flex flex-col justify-center flex-grow">
           <h2 className="text-3xl sm:text-7xl font-bold">
@@ -38,6 +58,7 @@ const Home = () => {
         </Link>
       </div>
     </div>
+   </>
   );
 };
 
