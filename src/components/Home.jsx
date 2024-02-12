@@ -1,37 +1,8 @@
-import React, { useState } from 'react';
-import { BsFillArrowDownCircleFill } from 'react-icons/bs';
-import { Link } from 'react-scroll';
+import React from 'react';
 import Hero from '../assets/hero.png'
 import Wave from '../assets/wave.mp4'
 
 const Home = () => {
-  const [currentSection, setCurrentSection] = useState('home');
- 
-
- 
-
-  const handleClick = () => {
-    switch (currentSection) {
-      case 'home':
-        setCurrentSection('about');
-        break;
-      case 'about':
-        setCurrentSection('portfolio');
-        break;
-      case 'portfolio':
-        setCurrentSection('tech stack');
-        break;
-      case 'tech stack':
-        setCurrentSection('contact');
-        break;
-      case 'contact':
-        setCurrentSection('home');
-        break;
-      default:
-        setCurrentSection('home'); 
-        break;
-    }
-  };
 
  return (
    <>
@@ -51,13 +22,7 @@ const Home = () => {
           <img src={Hero} alt="my profile" className="rounded-2xl mx-auto w-2/3 md:w-full" />
         </div>
          </div>
-        <div className="flex justify-center fixed bottom-0 mb-8 w-full">
-        <Link to={currentSection} smooth duration={500} offset={-50} className="group animate-bounce hover:animate-none" onClick={handleClick} >
-         
-            <BsFillArrowDownCircleFill size={30} />
-         
-        </Link>
-      </div>
+       
     </div>
    </>
   );
