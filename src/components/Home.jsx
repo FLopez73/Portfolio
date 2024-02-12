@@ -35,7 +35,7 @@ const Home = () => {
 
  return (
    <>
-    <video autoPlay loop muted className="absolute z-negative w-full h-full object-cover">
+    <video autoPlay loop muted className="absolute z-0 w-full h-full object-cover">
       <source src={Wave} type="video/mp4" />
       Your browser does not support the video tag.
     </video>
